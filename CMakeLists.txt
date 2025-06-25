@@ -6,6 +6,7 @@ enable_testing()
 
 FILE(GLOB MyCSources src/*.c)
 add_executable(jcl2jcl ${MyCSources})
+add_library(jcl SHARED ${MyCSources})
 target_include_directories(jcl2jcl PRIVATE src)
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
