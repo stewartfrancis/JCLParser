@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import ctypeslib
 from ctypeslib.codegen import config
 
